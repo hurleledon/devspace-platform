@@ -1,0 +1,17 @@
+schemaVersion: 2.1.0
+metadata:
+  generateName: devspace-platform-example
+attributes:
+  controller.devfile.io/storage-type: per-workspace
+components:
+  - name: tools
+    container:
+      image: image-registry.openshift-image-registry.svc:5000/devspaces/udi-rhel8:3.6-20.1686737028-ptsb-v0.01
+      memoryLimit: 6G
+      mountSources: true
+      sourceMapping: /projects
+      volumeMounts:
+        - name: projects
+          path: /projects
+  - name: projects
+    volume: {}
