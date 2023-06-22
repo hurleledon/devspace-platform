@@ -6,7 +6,7 @@ attributes:
 components:
   - name: tools
     container:
-      image: image-registry.openshift-image-registry.svc:5000/devspaces/udi-rhel8:3.6-20.1686737028-ptsb-v0.01
+      image: image-registry.openshift-image-registry.svc:5000/marc-devspaces/udi-rhel8:3.6-20.1686737028-ptsb-v0.01
       memoryLimit: 6G
       mountSources: true
       sourceMapping: /projects
